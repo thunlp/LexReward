@@ -78,7 +78,7 @@ The paper uses a five-model candidate pool: **Qwen3-4B**, **Qwen3.5-4B**, **Qwen
 
 The construction scripts rank five scored responses per query as r1 through r5 and assign selected queries to disjoint tiers:
 
-![Tier Assignment Decision Flow](assets/lexreward-final-decisions.png)
+![Tier Assignment Decision Flow](assets/lexreward-decisions.png)
 
 | Tier | Ratio | Selection rule | Preferred / dispreferred response |
 | :--- | ---: | :--- | :--- |
