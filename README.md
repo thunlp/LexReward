@@ -20,6 +20,8 @@ The framework operationalizes these criteria with interpretable rule-based evalu
 
 The paper evaluates rubric rewards and LexRM through preference selection and test-time scaling, and studies downstream policy optimization with DPO and GRPO. Its experiments show that rubric-guided preference data and learned reward models improve legal response quality across the three dimensions.
 
+![LexReward Framework](assets/lexreward-main-final.png)
+
 # Project Structure
 
 The code package is organized into three folders:
@@ -75,6 +77,8 @@ The following statistics describe the **paper's experiments**, not dataset files
 The paper uses a five-model candidate pool: **Qwen3-4B**, **Qwen3.5-4B**, **Qwen3.5-9B**, **Llama-3.1-8B-Instruct**, and **gemma-4-12B-it**. It uses **Qwen3-8B** as the backbone for trained models and **DeepSeek-V4-Flash** for LLM-based rubric evaluation.
 
 The construction scripts rank five scored responses per query as r1 through r5 and assign selected queries to disjoint tiers:
+
+![Tier Assignment Decision Flow](assets/lexreward-final-decisions.png)
 
 | Tier | Ratio | Selection rule | Preferred / dispreferred response |
 | :--- | ---: | :--- | :--- |
