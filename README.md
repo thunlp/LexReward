@@ -20,7 +20,7 @@ The framework operationalizes these criteria with interpretable rule-based evalu
 
 The paper evaluates rubric rewards and LexRM through preference selection and test-time scaling, and studies downstream policy optimization with DPO and GRPO. Its experiments show that rubric-guided preference data and learned reward models improve legal response quality across the three dimensions.
 
-![LexReward Framework](assets/lexreward-main-final.png)
+![LexReward Framework](assets/lexreward-framework.png)
 
 # Project Structure
 
