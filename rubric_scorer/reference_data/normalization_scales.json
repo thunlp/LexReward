@@ -1,0 +1,12 @@
+{
+  "source": "CJO ms 986篇 LY字段 原始度量均值",
+  "N_docs": 986,
+  "scales": {
+    "D1": 12.3071,
+    "D2": 12.6957,
+    "D3": 0.011573,
+    "D4": 26.0567,
+    "D5": 0.282161
+  },
+  "description": "各维度 reward = -raw_metric / scale，使 CJO ms LY 均分 ≈ -1"
+}
