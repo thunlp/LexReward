@@ -28,7 +28,7 @@ The code package is organized into three folders:
 
 | Folder | Description |
 | :--- | :--- |
-| [`rubric_scorer/`](rubric_scorer/README.md) | Style v7.2 scoring, reference-free Element LLM judge (DeepSeek-V4-Flash), heuristic Chain scoring, and an LLM-based Chain judge, with reference statistics and lexical resources. |
+| [`rubric_scorer/`](rubric_scorer/README.md) | Style scoring, reference-free Element LLM judge (DeepSeek-V4-Flash), heuristic Chain scoring, and an LLM-based Chain judge, with reference statistics and lexical resources. |
 | [`data_construction/`](data_construction/README.md) | CLASE, Element, and LexChain scripts for constructing RM preference data from scored five-model pools at a **5:3:2** tier ratio. |
 | [`rm_training/`](rm_training/README.md) | Pairwise RM training, a ZeRO-3-aware training implementation, a launch script, and a DeepSpeed configuration. |
 
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 python data_construction/build_clase_rm_pairs.py --help
 python data_construction/build_lexchain_rm_pairs.py --help
 
-# Score a Chinese legal document with Style v7.2.
+# Score a Chinese legal document with Style Scorer.
 python rubric_scorer/style_scorer.py \
     --file /path/to/legal_text.txt --json
 
